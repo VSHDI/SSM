@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface UserDao {
     List<TbUser> selectAll();
+    TbUser findByEmail(String username);
 }

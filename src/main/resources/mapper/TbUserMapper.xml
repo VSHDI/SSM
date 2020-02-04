@@ -9,4 +9,14 @@
         FROM
         tb_user AS a
     </select>
+    <select id="findByEmail" resultType="TbUser">
+        SELECT
+        a.id,
+        a.username,
+        a.password
+        FROM
+        tb_user AS a
+        where
+        a.username = #{username}
+    </select>
 </mapper>

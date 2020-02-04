@@ -25,4 +25,12 @@ public class UserDaoTest {
             System.out.println(tbUser.getUsername());
         }
     }
+
+    @Test
+    public void findByEmail(){
+        TbUser user = userDao.findByEmail("zhang");
+        System.out.println(user.getUsername());
+        System.out.println(user.getId());
+        System.out.println(user.getPassword());
+    }
 }
